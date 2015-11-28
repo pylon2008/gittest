@@ -16,3 +16,7 @@ git branch 												// 列出本地所有分支
 git branch test											// 创建“test”分支，但是不check out到test分支
 git push origin test									// 提交本地test分支作为远程的test分支
 git branch -d test										// 删除本地的“test”分支
+
+
+git log													// 查看修改记录，即使commit的没有push的，还在本地，也可以看到
+git log -n 1											// 查看最后一次修改的内容
