@@ -1,0 +1,18 @@
+git init
+git add "filename"
+git commit -m "the first file to commit" filename
+git remote add origin ssh://software@172.16.0.30/~/yafeng/.git
+
+git add .												// 将当前目录下所有的文件添加（添加到index区域\暂存区）
+git add ./read.txt										// 将文件"read.txt"添加（添加到index区域）
+git commit -m ""										// 提交修改到仓库（本地仓库，未提交到远程服务器）
+git push origin master									// 将本地提交到远程服务器
+
+git checkout -b branch_001 								// 以master为源创建分支branch_001
+git push origin branch_001:branch_001					// 提交本地ranch_001分支作为远程的ranch_001分支
+git push origin :branch_001              				// 刚提交到远程的branch_001将被删除，但是本地还会保存的，不用担心
+
+git branch 												// 列出本地所有分支
+git branch test											// 创建“test”分支，但是不check out到test分支
+git push origin test									// 提交本地test分支作为远程的test分支
+git branch -d test										// 删除本地的“test”分支
