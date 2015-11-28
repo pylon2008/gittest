@@ -21,3 +21,4 @@ git branch -d test										// 删除本地的“test”分支
 git log													// 查看修改记录，即使commit的没有push的，还在本地，也可以看到
 git log -n 1											// 查看最后一次修改的内容
 git log -n 1 --stat										// 想看到最近一次提交所有更改过的文件
+git log -n 1 -p 										// 最近一次提交所有更改的细节
