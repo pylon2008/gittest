@@ -1,0 +1,11 @@
+LIBRARY	"HookDll"
+
+EXPORTS
+	In
+	UnInitHook
+	RepairR3Api
+
+SECTIONS
+	.data READ WRITE SHARED
+	g_hHookKeybord
+
